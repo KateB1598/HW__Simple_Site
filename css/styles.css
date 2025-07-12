@@ -29,6 +29,9 @@ body {
     max-width: 1110px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -36,14 +39,62 @@ h1 {
     font-weight: var(--basic-font-weight);
 }
 
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+}
+
 h2 {
     font-size: 32px;
     font-weight: var(--basic-font-weight);
 }
 
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+
 h3 {
     font-size: 21px;
     font-weight: var(--basic-font-weight);
+}
+
+@media (max-width: 1024px) {
+    h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    h3 {
+        font-size: 16px;
+    }
 }
 
 h1+p {
@@ -66,7 +117,29 @@ button {
     cursor: pointer;
     text-transform: uppercase;
     font-family: var(--basic-font-family);
+    margin-left: 20px;
 
+}
+
+@media (max-width: 1024px) {
+    button {
+        padding: 20px 36px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    button {
+        padding: 18px 32px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 16px 28px;
+        font-size: 13px;
+    }
 }
 
 button.primary {
@@ -80,6 +153,7 @@ button.primary:active {
     background-color: #51739d;
 }
 
+
 section {
     padding: 100px 0;
 }
@@ -90,6 +164,21 @@ section {
     padding: 80px 0 140px;
     background-color: var(--light-grey-color);
     height: 85vh;
+    padding-left: 20px;
+
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 60px 0 100px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 0;
+    }
 }
 
 .hero__container {
@@ -97,6 +186,15 @@ section {
     flex-direction: column;
     gap: 60px;
     height: 100%;
+    margin-left: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .hero__container {
+        gap: 30px;
+    }
 }
 
 nav {
@@ -107,9 +205,32 @@ nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 64px;
+    gap: 34px;
     padding: 0;
     margin: 0;
+    font-size: 14px;
+}
+
+
+@media (max-width: 1024px) {
+    nav ul {
+        gap: 24px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        gap: 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 16px;
+        font-size: 11px;
+    }
 }
 
 nav a {
@@ -133,6 +254,8 @@ nav a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 /*ADVANTAGES*/
@@ -147,8 +270,26 @@ nav a {
 
 .advantages__list {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    font-size: 13px;
+    white-space: normal;
+}
+
+@media (max-width: 768px) {
+    .advantages__list {
+        gap: 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .advantages__list {
+        gap: 16px;
+        font-size: 11px;
+    }
 }
 
 .advantages__item {
@@ -167,10 +308,19 @@ nav a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .works__video {
     margin-top: 60px;
+}
+
+@media (max-width: 480px) {
+    .works__video iframe {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /*FOOTER*/
@@ -178,6 +328,9 @@ nav a {
     background-color: var(--primary-color);
     padding: 50px 0;
     color: var(--white-color);
+    padding-left: 20px;
+    text-align: left;
+    box-sizing: border-box;
 }
 
 .footer__copy {
