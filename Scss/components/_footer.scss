@@ -1,0 +1,15 @@
+@use "../utils" as *;
+.footer {
+    background-color: $primary-color;
+    padding: 50px 0;
+    color: $white-color;
+    padding-left: 20px;
+    text-align: left;
+    box-sizing: border-box;
+    &__copy{
+     font-size: 13px; 
+    }
+    &__auhtor{
+     margin-bottom: 20px;   
+    }
+}
