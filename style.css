@@ -1,0 +1,23 @@
+.circle {
+    fill: silver;
+    stroke: violet;
+}
+
+.circle:hover {
+    fill: rgb(192, 127, 127);
+    stroke: rgb(81, 34, 81);
+    opacity: 0.5;
+
+}
+
+.ellipse {
+    fill: papayawhip;
+    stroke: skyblue;
+
+}
+
+.ellipse:hover {
+    fill: rgb(180, 193, 12);
+    stroke: rgb(6, 128, 177);
+    opacity: 0.5;
+}
